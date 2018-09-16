@@ -3,8 +3,7 @@ import React, { Component } from "react";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
 
-import './App.css';
-
+import Input from './Input';
 import Posts from './Posts';
 
 const client = new ApolloClient({
@@ -20,6 +19,7 @@ class App extends Component {
             <a className="navbar-brand" href="#">Chantal - Share stories, anonymously!</a>
           </nav>
           <div>
+            <Input />
             <Posts />
           </div>
         </div>
