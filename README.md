@@ -2,7 +2,7 @@
 
 Share stories, anonymously!
 
-## Additional
+### Additional
 
 Curious to know what the name of the project means?
 
