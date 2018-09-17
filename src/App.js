@@ -37,14 +37,25 @@ class App extends Component {
             <Input />
             <Posts />
           </div>
-          <nav className="navbar navbar-default navbar-fixed-bottom footer-container">
-            <div>Made by <a href="https://github.com/monte9">Monte Thakkar</a> | Share on</div>
-            <TwitterShareButton
-              title="Check out this website where you can share stories anonymously!"
-              via="MThakkar_"
-              url="http://chantal.app">
-              <a href="">&nbsp;Twitter</a>
-            </TwitterShareButton>
+          <nav className="navbar navbar-default navbar-fixed-bottom footer">
+            <div className="footer-container">
+              <div className="footer-about-container">
+                <div>Made by <a href="https://github.com/monte9" target="_blank" rel="noopener noreferrer">Monte Thakkar</a></div>
+                <div className="footer-divider">&nbsp;|&nbsp;</div>
+                <div className="footer-twitter-share">
+                  Share on
+                  <TwitterShareButton
+                    title="Check out this website where you can share stories anonymously!"
+                    via="MThakkar_"
+                    url="http://chantal.app">
+                    <a href="">&nbsp;Twitter</a>
+                  </TwitterShareButton>
+                </div>
+              </div>
+              <div className="footer-meaning-container">
+                <a href="https://www.urbandictionary.com/define.php?term=Chantal" target="_blank" rel="noopener noreferrer">What does Chantal mean?</a>
+              </div>
+            </div>
           </nav>
         </div>
       </ApolloProvider>
