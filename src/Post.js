@@ -6,7 +6,7 @@ import { timeSince } from './helpers';
 
 export default class Post extends Component {
   render() {
-    const { id, createdAt, updatedAt, description, category } = this.props.post;
+    const { id, createdAt, description, category } = this.props.post;
 
     return (
       <div className="card" key={id} style={{'width': '100%', 'marginTop': '10px'}}>

@@ -61,15 +61,15 @@ export default class Input extends Component {
       <Mutation mutation={CREATE_POST} refetchQueries={[{ query: POSTS_QUERY }]}>
         {(createPost, { data }) => (
           <div className="input-container">
-            <form className="form-group shadow-textarea form-container">
+            <div className="form-group shadow-textarea form-container">
               <textarea
                 className="form-control z-depth-1"
-                ref="storyInput"
                 type="text"
                 rows="4"
                 name="story"
                 placeholder="Share a story.. it's totally anonymous."
                 value={story}
+                maxLength="1500"
                 onChange={(event)=>{
                   this.setState({
                     story: event.target.value
@@ -96,7 +96,7 @@ export default class Input extends Component {
                   Share
                 </button>
               </div>
-            </form>
+            </div>
           </div>
         )}
       </Mutation>

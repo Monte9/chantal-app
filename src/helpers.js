@@ -4,15 +4,15 @@ export function timeSince(timeStamp) {
   const secondsPast = (now.getTime() - new Date(timeStamp).getTime()) / 1000;
 
   if (secondsPast < 60) {
-    return parseInt(secondsPast) + 's ago';
+    return parseInt(secondsPast, 10) + 's ago';
   }
 
   if (secondsPast < 3600) {
-    return parseInt(secondsPast / 60) + 'm ago';
+    return parseInt(secondsPast / 60, 10) + 'm ago';
   }
 
   if (secondsPast <= 86400) {
-    return parseInt(secondsPast / 3600) + 'h ago';
+    return parseInt(secondsPast / 3600, 10) + 'h ago';
   }
 
   if (secondsPast > 86400) {

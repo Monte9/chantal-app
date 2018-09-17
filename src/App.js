@@ -19,7 +19,7 @@ class App extends Component {
         <div className="container">
           <nav className="navbar navbar-dark bg-primary sticky-nav">
             <div className="container">
-              <a className="navbar-brand" href="#">Chantal - Share stories, anonymously!</a>
+              <div className="navbar-brand">Chantal - Share stories, anonymously!</div>
               <a className="float-right navbar-twitter-share">
                 <TwitterShareButton
                   title="Check out this website where you can share stories anonymously!"
